@@ -1,0 +1,15 @@
+select: data.select('condition')
+
+project: data.project(['col1','col2'])
+
+cartesien: data.cartesien(data2)
+
+rename: data.dfrename(data_name = 'new', old_col=['old1','ol2'], new_col=['new1','new2'])
+	data.dfrename(data_name = 'new')
+	data.dfrename(old_col=['old1','ol2'], new_col=['new1','new2'])
+
+union: data.union(data2)
+
+difference: data.difference(data2)
+
+intersection: data.intersect(data2)
